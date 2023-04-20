@@ -125,7 +125,14 @@ public class Citas extends javax.swing.JFrame {
 //           }
 //    }
     
-    
+    /**parecido la clase registrar se crea la eliminacion en donde se genera
+     * como parametros de entrada el nro de cita a eliminar , en la clase se
+     * busca y se procede a eliminar usando segmentos de codigos directos a la
+     * conexion de base de datos de esa forma se elimina directamente. C
+     * Claramente este proceso se debe de realizar desde la vista administrador 
+     * ya que ningun paciente debe ser capaz de eliminar , los permisos tambien 
+     * los puede tener el medico dependiendo de las reglas de negocio existentes
+     */
     public class SeccionCritica{
         Citas cita = new Citas();
         private int atenciones;
@@ -465,7 +472,10 @@ public class Citas extends javax.swing.JFrame {
     }//GEN-LAST:event_bbuscar2ActionPerformed
     
 
-    
+  /**en esta seccion se agrega la opcion en la interfaz de eliminar boton haciendo 
+   * llamada a una clase identificada como eliminar
+   * 
+   */
     private void btn_limpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_limpiarActionPerformed
         tf_paciente_dni.setText("");
         tf_buscar_paciente_dni.setText("");
